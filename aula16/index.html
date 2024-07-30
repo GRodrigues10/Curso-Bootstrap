@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilidade</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .border{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="p-5 bg-danger"></div>
+    <div class="p-4 col-3 d-none d-lg-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block m-3 bg-success"></div>
+    <div class="p-4 col-3 d-block m-3 bg-warning"></div> -->
+
+    <header class="p-3 text-bg-dark d-print-none"><!--O d-print-none não deixa o header(nesse caso) ser imprimido na hora da impressão por uma impressora-->
+        <div class="container">
+            <h1 class="display-2">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, aperiam alias, quisquam fuga dolore nobis laborum praesentium ipsa tempore harum reiciendis. Alias, adipisci rerum beatae fugiat similique ipsum magni vel?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda esse blanditiis totam odit deserunt exercitationem quidem eveniet maxime atque earum voluptatum doloribus vitae laborum, veritatis, perspiciatis eum asperiores omnis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem a, tenetur repellat perferendis quibusdam sunt molestias veritatis laborum facere in, illum quo! Dignissimos expedita ipsam officiis doloremque eos, repudiandae ut!</p>
+        <p class="d-none d-print-block" >Fonte: Meu site Bacana</p><!--Isso só aparece na hora da impressão!-->
+    </article>
+
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div><!--Deixando a div invisível-->
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde molestias suscipit sed aut. Ipsa inventore totam debitis voluptatem deserunt tempora voluptatibus placeat, ad ea cum, quibusdam delectus sapiente, iure non.</div>
+            <div class="border p-2 col-3 overflow-visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi illum molestiae assumenda quidem explicabo nostrum ratione quos nisi. Officia alias libero iste non repellendus assumenda nostrum incidunt. Delectus, laboriosam. Ad.</div>
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae odit illo eveniet autem blanditiis molestiae perspiciatis quisquam! Expedita esse sint quas delectus aperiam, eum dolore! Commodi ab natus vel.</div>
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, iusto deleniti, quis eligendi soluta neque quia libero, cumque dolor debitis quo optio omnis! Veritatis illum repudiandae excepturi beatae, totam laborum.</div>
+        </div>
+    </div>
+    
+</body>
+</html>
